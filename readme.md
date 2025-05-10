@@ -11,6 +11,7 @@ This is a simple AI language translator that leverages the OpenAI API for transl
 - [Configuration](#configuration)
 - [Running the Application](#running-the-application)
 - [Usage](#usage)
+- [Screenshot](#screenshot)
 - [License](#license)
 
 ## Features
@@ -100,6 +101,10 @@ This is a simple AI language translator that leverages the OpenAI API for transl
 2.  Enter the desired target language in the "Translate to" input field (e.g., "Spanish", "French", "Japanese", "Chinese", "Korean", "Russian").
 3.  Click the "Translate" button.
 4.  The translation text will then be displayed.
+
+## Screenshot
+
+![translator screenshot](translator.png)
 
 ## License
 
