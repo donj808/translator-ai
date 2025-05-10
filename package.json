@@ -1,0 +1,20 @@
+{
+  "name": "translator-ai-client",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+    "build": "cd server && node_modules/.bin/tsc",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && nodemon src/index.ts",
+    "dev:client": "cd client && npm start",
+    "start:server": "cd server && node dist/index.js",
+    "start:client": "cd client && npm start",
+    "build:client": "cd client && npm run build",
+    "build:all": "npm run build && npm run build:client",
+    "start:prod": "npm run build:all && npm start"
+  }
+}
